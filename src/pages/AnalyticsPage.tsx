@@ -238,7 +238,7 @@ export default function AnalyticsPage() {
                         const h = (Number(r.total_sales) / maxSales) * 100;
                         const date = new Date(r.report_date);
                         return (
-                          <div key={i} className="flex-1 flex flex-col items-center gap-1 group relative">
+                          <div key={i} className="flex-1 flex flex-col justify-end items-center gap-1 group relative">
                             <div
                               className="w-full rounded-t-sm bg-gradient-to-t from-blue-600/40 to-blue-500/80 hover:from-blue-600/60 hover:to-blue-400 transition-all cursor-pointer"
                               style={{ height: `${Math.max(h, 3)}%` }}
